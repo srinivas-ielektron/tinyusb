@@ -79,7 +79,7 @@ bool tuc_init(uint8_t rhport, uint32_t port_type) {
 
   // skip if port already initialized
   if ( _port_inited[rhport] ) {
-    return true;
+    return false;
   }
 
   TU_LOG_USBC("USBC init on port %u\r\n", rhport);
